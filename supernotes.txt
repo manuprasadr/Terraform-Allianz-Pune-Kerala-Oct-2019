@@ -1,0 +1,322 @@
+
+My Name - Rajesh Kumar
+3 Days - AWS
+2 Days - Azure
+==========================
+DevOps - CI - CD - Cloud - Container
+=================================
+Office Hour - 9.30 - 6.30
+========================
+Lunch Hour - 1 - 2 PM
+Tea break -
+============================
+Demo - AWS + Azure
+Lab - AWS + Azure
+=============================
+---
+Ansible
+Jenkins
+===================================
+What is terraform?
+----------------------
+        Coding for Infra...
+        Infra as a Code?
+        PROVIDERS ===== AKA TOOLS
+            HARSHICORP
+            COMMUNITY
+        by HARSHICORP
+            Vagrant
+            Packer
+            Consul
+            terraform
+        Written in Go
+        Version
+            Community - CMD
+            Enterprise - CMD + GUI
+
+
+Lets understand what we have in infra?
+======================================
+SDLC
+-------
+Prj - AllianZX
+Mgr - MgrX
+------------------------
+Under a DevOps Influence
+------------------------
+    1. Immediate release - Every Commit should be eligible prod
+    2. Quality Redefined
+    3. Cost Reduction
+
+https://www.youtube.com/watch?v=-VaVmb_UOC8 - 8 HOURS
+
+------------------------
+1 WEEK ----------> 1 Hour
+==========================
+1. monolitic - microservices
+2. Team culture and mindset
+3. Right object
+4. Automation
+==========================
+Planning - Architect - Visio, jira, Confluence - 10 microservices
+Dev - 10 
+        Code Integ ---> Github
+        Code Review -
+            Peer Code Review - Github, Gerrit, CodeCollab
+            Static Code Review - SonarQube, Foritfy,
+        Build mgmt - Maven, Gradle, Ant, MSBuild, 
+        Unit Testing -  Junit, JNunit, Rspec
+        Packaging team -
+            SYSTEM - EXE, MSI, DMG, RPM, DEB, APK
+            APP - zip, tar, war, ear, jar, dll
+        Archiving - Nexus, Artifacotry, Archiva, Nuget,
+        ENV
+                Dev
+                Staging
+                UAT
+                PROD
+AllianZX11.1- 10.30 AM
+===================================
+Staging - 200 SERVER
+
+1 Deployment - 9 mins?
+200 Dep ------ 9 mins?
+    ----------------------
+        HOW? Parrel......
+        100 W 100 LINUX
+        100 APAHE 100 NG
+        50 TOM 50 JOBS 50 WL 50 WS
+        50 MYSQL 50 MS 50 OR 50 PS
+        100 DIFF
+    ----------------------
+    Ansible, Puppet, Chef, UDeploy, Octopus Deployment
+Overall Deployment time - 10 mINS.....
+---------------------------------
+How to get 200 machine in 1 mins? -------
+        AWS, Azure
+==========================================
+200 Dep --> 1 SECOND
+Container - Docker ---> Kubernetes
+
+    AT
+            SELENIUM + HP + FOrify + QTP
+
+    Code Coverage/ Test Coverage - Jacoco, Cobertura
+
+=======================================================================
+What is Jenkins?
+---------------------------------
+CI TOOL
+Cont Integ.
+Auto Build -> Auto testing -> Auto feedback
+Plan->Code->Review->BUikd->UT->Pack->Archivin->Dep2QA-AT-CC-release
+Jira->git->Sonar-Juunit-Mave->>Jar->Artifav->Ansibel->Sel->jacoo-->
+====================================================================
+                                JENKINS
+AWS
+Azure
+Docker
+Kuber
+-------------------------
+1 PERSON WHO CAN CODE FOR PROD
+1 PERSON WHO CAN CODE FOR TESTING A PROD
+1 PERSON WHO CAN CODE for INFRA-OPS for ENTIRE TEAM
+        - INFRA ON AWS
+    
+==================================================
+https://www.devopsschool.com/path/
+
+==================================================
+Ansible  Vs terraform
+--------------------
+Server mgtm 
+Config 
+Ansible does understand each infra tools-their properties
+
+
+Code for infra --- in infra you have so many tools.
+    Does it.
+====================================================================
+USE CASES
+=============================
+Github
+    AWS
+        Setting up --- Ansible
+    Do something for Build - PAck - UR - AT - CC
+    Deploy to 
+            Dev
+                VPC
+                SUBNET
+                ROUTE
+                IGW
+                Secuirt
+                EC2insta -----> Ansible --> AT
+                RDS
+                ASG
+                ROUTE 53
+                SQS
+                SNS
+                SES
+            QA
+                      Dev
+                VPC
+                SUBNET
+                ROUTE
+                IGW
+                Secuirt
+                EC2insta
+                RDS -- mYSQL
+                ASG
+                ROUTE 53
+                SQS
+                SNS
+                SES
+            PROD
+                      Dev
+                VPC
+                SUBNET
+                ROUTE
+                IGW
+                Secuirt
+                EC2insta
+                RDS
+                ASG
+                ROUTE 53
+                SQS
+                SNS
+                SES
+
+AWS
+Azure
+GC
+Jira
+Github
+Maven
+MYSQL
+===================================================
+CREATE  -----> UPDATE  ---> DESTROY 
+------------1 COMMAND ----------------------------
+TERRAFORM
+==================================================
+TERRAFORM Architecute
+
+Humen --> Terraform -> Providers --> API --> TOOL
+SPL(20) ------------------------- ----------
+
+CREATE  ---- UPDATE  --- DELETE
+
+---terraform    
+
+
+==============================
+IF YOU WANT TO AUTOMATE -
+        YOU NEED TO KNOW Providers and Their FEARURES...
+        ----------------------
+        AWS
+            IAM
+            EC2
+            EBS
+            S3
+            ASG
+            VPC
+            SUBNET
+            SECURITY
+            KEYS
+
+---------------------------Format ---------------------------
+PROVIDER (AWS)
+            (Resources)
+                    Properties(Argument)
+                    Provisionars
+
+PROVIDERS
+https://www.terraform.io/docs/providers/index.html
+
+            EC2
+            EBS
+            S3
+            ASG
+            VPC
+            SUBNET
+            SECURITY
+            KEYS
+
+How to install Terraform?
+==============================
+    2  wget https://releases.hashicorp.com/terraform/0.12.12/terraform_0.12.12_linux_amd64.zip
+    3  yum install wget -y
+    4  sudo yum install wget -y
+    5  clear
+    6  cd
+    7  ls
+    8  wget https://releases.hashicorp.com/terraform/0.12.12/terraform_0.12.12_linux_amd64.zip
+    9  clear
+   10  ls
+   11  unzip terraform_0.12.12_linux_amd64.zip
+   12  sudo yum install unzip
+   13  clear
+   14  unzip terraform_0.12.12_linux_amd64.zip
+   15  clear
+   16  ls
+   17  echo $PATH
+   18  chmod 755 terraform
+   19  mv terraform /usr/local/bin
+   20  sudo mv terraform /usr/local/bin
+   21  clear
+   22  s
+   23  terraform
+
+
+Repo Name - Terraform-Allianz-Pune-Kerala-Oct-2019
+supernotes.txt
+Rajesh
+    myfile
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
